@@ -10,6 +10,10 @@ public class Yahtzee extends Combination {
 
     @Override
     public int earnedScores(DiceLayout diceL) {
+        return getScores(diceL);
+    }
+
+    private int getScores(DiceLayout diceL) {
         return diceL.toCounts().keySet().size() == 1 ? SCORES_YAHTZEE : 0;
     }
 
