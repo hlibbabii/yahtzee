@@ -9,8 +9,8 @@ public class Yahtzee extends Combination {
     private static final int SCORES_YAHTZEE = 50;
 
     @Override
-    public int earnedScores(DiceLayout diceLayout) {
-        return diceLayout.toCounts().keySet().size() == 1 ? SCORES_YAHTZEE : 0;
+    public int earnedScores(DiceLayout diceL) {
+        return diceL.toCounts().keySet().size() == 1 ? SCORES_YAHTZEE : 0;
     }
 
     @Override
