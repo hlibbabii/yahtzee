@@ -6,11 +6,11 @@ public class Yahtzee extends Combination {
 
     public static final Yahtzee YAHTZEE = new Yahtzee();
 
-    private static final int SCORES_FOR_YAHTZEE = 50;
+    private static final int SCORES_YAHTZEE = 50;
 
     @Override
     public int earnedScores(DiceLayout diceLayout) {
-        return diceLayout.toCounts().keySet().size() == 1 ? SCORES_FOR_YAHTZEE : 0;
+        return diceLayout.toCounts().keySet().size() == 1 ? SCORES_YAHTZEE : 0;
     }
 
     @Override
