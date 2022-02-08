@@ -9,7 +9,7 @@ public class GameDemo {
         Player player1 = new DummyPlayer();
         Player player2 = new DummyPlayer();
 
-        Game yahtzeeGame = new Game(player1, player2);
+        Game yahtzeeGam = new Game(player1, player2);
 
         GameStats gameStats = yahtzeeGame.play();
         System.out.println("Player1");
